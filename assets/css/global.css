@@ -1,0 +1,178 @@
+/* COLOR */
+:root {
+  --color-black: rgba(0, 0, 0, 1);
+  --color-black-o10: rgba(0, 0, 0, 0.1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-white-o50: rgba(255, 255, 255, 0.5);
+  --color-gold: rgba(119, 102, 102, 1);
+}
+
+/* TYPE */
+:root {
+  --font-body: normal 200 1.4rem/1.6 Overpass;
+  --font-logotype: italic 200 1.1rem/1.6 Overpass;
+  --font-nav: normal 500 0.9rem/1.6 Overpass;
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("../fonts/overpass-v12-latin-200.woff2") format("woff2"),
+    url("../fonts/overpass-v12-latin-200.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/overpass-v12-latin-500.woff2") format("woff2"),
+    url("../fonts/overpass-v12-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("../fonts/overpass-v12-latin-200.woff2") format("woff2"),
+    url("../fonts/overpass-v12-latin-200.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-style: italic;
+  font-weight: 200;
+  src: local(""),
+    url("../fonts/overpass-v12-latin-200italic.woff2") format("woff2"),
+    url("../fonts/overpass-v12-latin-200italic.woff") format("woff");
+}
+
+/* EFFECTS */
+:root {
+  --shadow-box: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+  --radius-box: 12px;
+  --width-normal: 760px;
+  --width-wide: 800px;
+  --width-full: 100%;
+}
+
+/* BASELINING */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
+  letter-spacing: 0;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font: var(--font-body);
+}
+
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+hr,
+pre,
+form,
+table,
+video,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+  -webkit-appearance: none;
+}
+
+/* PRESENTATION */
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body > header,
+body > footer {
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font: var(--font-logotype);
+  background-color: var(--color-black-o10);
+}
+
+body > header {
+  font: var(--font-logotype);
+  background-color: var(--color-black-o10);
+}
+
+body > footer {
+  font: var(--font-nav);
+  background-color: var(--color-white);
+}
+
+.home-template p {
+  padding: 4rem 1rem;
+  text-align: center;
+}

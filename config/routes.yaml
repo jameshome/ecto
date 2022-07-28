@@ -1,0 +1,11 @@
+routes:
+  /:
+    data: page.home
+    template: home
+collections:
+  /posts/:
+    permalink: /posts/{slug}/
+    template: index
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

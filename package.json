@@ -1,0 +1,70 @@
+{
+  "name": "theme_name",
+  "description": "theme_description",
+  "version": "0.0.1",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "npx webpack watch --mode development",
+    "build": "npx webpack --mode development",
+    "prod": "npx webpack --mode production",
+    "bundle": "npx webpack --mode production && npm-pack-zip && mv theme_name.zip beloved-$npm_package_version.zip",
+    "test": "gscan ."
+  },
+  "author": {
+    "name": "James Home",
+    "email": "jh@jameshome.com",
+    "url": "https://jameshome.com"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Custom",
+      "Proprietary"
+    ]
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/github_team/theme_name.git"
+  },
+  "bugs": "https://github.com/github_team/theme_name/issues",
+  "contributors": [
+    "Beloved Contributors (https://github.com/github_team/theme_name/graphs/contributors)"
+  ],
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.5.0",
+    "css-minimizer-webpack-plugin": "^3.1.1",
+    "gscan": "4.16.0",
+    "mini-css-extract-plugin": "^2.4.3",
+    "npm-pack-zip": "^1.3.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "config": {
+    "card_assets": true,
+    "posts_per_page": 15,
+    "image_sizes": {
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1200
+      }
+    }
+  },
+  "dependencies": {
+    "reframe.js": "^4.0.0"
+  }
+}
