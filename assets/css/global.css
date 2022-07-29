@@ -79,17 +79,12 @@
 /* PRESENTATION */
 /* default */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   overflow-x: hidden;
   overflow-y: scroll;
   overscroll-behavior: none;
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
@@ -97,6 +92,12 @@ body {
   background-color: var(--color-white);
   color: var(--color-black);
   font: var(--font-body);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 b {
