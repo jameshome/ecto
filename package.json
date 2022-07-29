@@ -1,7 +1,7 @@
 {
   "name": "theme_name",
   "description": "theme_description",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

@@ -1,5 +1,7 @@
 {{!< default}}
 
-{{#foreach posts}}
-  {{> "card"}}
-{{/foreach}}
+<main class="post-feed canvas">
+  {{#foreach posts}}
+    {{> "post-card"}}
+  {{/foreach}}
+</main>

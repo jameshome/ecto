@@ -1,9 +1,10 @@
 {{!< default}}
 
 {{#post}}
-  <article class="{{post_class}}">
-    <header>
-      <h1>{{title}}</h1>
+  <article class="article {{post_class}}">
+    <header class="article-header canvas">
+
+      <h1 class="article-title">{{title}}</h1>
 
       {{#if feature_image}}
         <figure class="feature-image">
@@ -14,10 +15,8 @@
         </figure>
       {{/if}}
     </header>
-
-    <div class="editor-content">
+    <div class="content canvas">
       {{content}}
     </div>
-
   </article>
 {{/post}}
