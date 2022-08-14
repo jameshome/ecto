@@ -1,14 +1,14 @@
 {
   "name": "theme_name",
   "description": "theme_description",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
     "dev": "npx webpack watch --mode development",
     "build": "npx webpack --mode development",
     "prod": "npx webpack --mode production",
-    "bundle": "npx webpack --mode production && npm-pack-zip && mv theme_name.zip beloved-$npm_package_version.zip",
+    "bundle": "npx webpack --mode production && npm-pack-zip && mv theme_name.zip theme_name-$npm_package_version.zip",
     "test": "gscan ."
   },
   "author": {
