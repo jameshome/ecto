@@ -1,7 +1,7 @@
 {
   "name": "theme_name",
   "description": "theme_description",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "bugs": "https://github.com/github_team/theme_name/issues",
   "contributors": [
-    "Beloved Contributors (https://github.com/github_team/theme_name/graphs/contributors)"
+    "theme_name contributors (https://github.com/github_team/theme_name/graphs/contributors)"
   ],
   "devDependencies": {
     "copy-webpack-plugin": "^9.0.1",
